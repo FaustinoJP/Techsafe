@@ -211,6 +211,7 @@ export default function HomePage() {
                 className="transform hover:scale-105 transition-transform duration-300"
               >
                 <ServiceCard
+                  
                   icon={service.icon}
                   title={service.title}
                   description={service.description}

@@ -298,12 +298,12 @@ export function VideoSection({ locale }: VideoSectionProps) {
                         {[...Array(3)].map((_, i) => (
                           <div
                             key={i}
-                            className="w-2 h-2 bg-[#4cb050]/30 rounded-full group-hover:bg-[#4cb050] transition-all duration-500"
+                            className="w-2 h-2 bg-[#00bcd5]/30 rounded-full group-hover:bg-[#00bcd5] transition-all duration-500"
                             style={{ transitionDelay: `${i * 100}ms` }}
                           ></div>
                         ))}
                       </div>
-                      <div className="text-xs font-semibold text-[#4cb050]/60 group-hover:text-[#4cb050] transition-colors duration-300">
+                      <div className="text-xs font-semibold text-[#00bcd5]/60 group-hover:text-[#00bcd5] transition-colors duration-300">
                         Faustware Soluções
                       </div>
                     </div>

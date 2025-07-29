@@ -66,15 +66,15 @@ export function ServiceCard({
       />
 
       <Card
-        className="h-full bg-white/80 backdrop-blur-sm border-2 border-transparent group-hover:border-[#4cb050]/20 transition-all duration-500 rounded-3xl shadow-lg group-hover:shadow-2xl relative overflow-hidden"
+        className="h-full bg-white/80 backdrop-blur-sm border-2 border-transparent group-hover:border-[#00bcd5]/20 transition-all duration-500 rounded-3xl shadow-lg group-hover:shadow-2xl relative overflow-hidden"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#4cb050]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#00bcd5]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
 
         {/* Decorative Corner */}
-        <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#4cb050]/10 to-transparent rounded-bl-3xl transform scale-0 group-hover:scale-100 transition-transform duration-500"></div>
+        <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#00bcd5]/10 to-transparent rounded-bl-3xl transform scale-0 group-hover:scale-100 transition-transform duration-500"></div>
 
         <CardHeader className="text-center pb-6 relative z-10">
           {/* Icon with Enhanced Effects */}
@@ -119,7 +119,7 @@ export function ServiceCard({
               <DialogContent className="max-w-2xl rounded-2xl border-2 border-[#ea1e63]/20">
                 <DialogHeader>
                   <DialogTitle className="flex items-center gap-3 text-2xl mb-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-[#4cb050] to-[#429846] rounded-xl flex items-center justify-center shadow-lg">
+                    <div className="w-12 h-12 bg-gradient-to-br from-[#00bcd5] to-[#00bcd5] rounded-xl flex items-center justify-center shadow-lg">
                       <Icon className="h-6 w-6 text-white" />
                     </div>
                     <span className="bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
@@ -135,7 +135,7 @@ export function ServiceCard({
             {/* WhatsApp Button */}
             <Button
               onClick={handleWhatsAppClick}
-              className="w-full bg-gradient-to-r from-[#4cb050] to-[#429846] hover:from-[#4cb050] hover:to-[#429846] text-white rounded-xl py-3 shadow-lg hover:shadow-xl transition-all duration-300 group/whatsapp"
+              className="w-full bg-gradient-to-r from-[#00bcd5] to-[#00bcd5] hover:from-[#137b89] hover:to-[#137b89] text-white rounded-xl py-3 shadow-lg hover:shadow-xl transition-all duration-300 group/whatsapp"
             >
               <MessageCircle className="h-4 w-4 mr-2 group-hover/whatsapp:scale-110 transition-transform duration-300" />
               {contractServiceText}
@@ -149,7 +149,7 @@ export function ServiceCard({
               {[...Array(5)].map((_, i) => (
                 <div
                   key={i}
-                  className="w-1.5 h-1.5 bg-[#4cb050]/20 rounded-full group-hover:bg-[#429846]/60 transition-all duration-500"
+                  className="w-1.5 h-1.5 bg-[#137b89]/20 rounded-full group-hover:bg-[#137b89]/60 transition-all duration-500"
                   style={{ transitionDelay: `${i * 50}ms` }}
                 ></div>
               ))}

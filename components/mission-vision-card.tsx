@@ -33,16 +33,16 @@ export function MissionVisionCard({
               <Icon className="h-8 w-8 text-white" />
             </div>
             {/* Glow Effect */}
-            <div className="absolute inset-0 bg-gradient-to-br from-[#4cb050] to-[#4cb050] rounded-2xl blur-lg opacity-0 group-hover:opacity-30 transition-opacity duration-500 -z-10"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-[#00bcd5] to-[#00bcd5] rounded-2xl blur-lg opacity-0 group-hover:opacity-30 transition-opacity duration-500 -z-10"></div>
             {/* Pulse Ring */}
-            <div className="absolute inset-0 border-2 border-[#4cb050]/30 rounded-2xl scale-110 opacity-0 group-hover:opacity-100 group-hover:scale-125 transition-all duration-500"></div>
+            <div className="absolute inset-0 border-2 border-[#00bcd5]/30 rounded-2xl scale-110 opacity-0 group-hover:opacity-100 group-hover:scale-125 transition-all duration-500"></div>
           </div>
 
           <div className="flex-1">
             <h3 className="text-2xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-2 group-hover:from-[#ea1e63] group-hover:to-[#007a4e] transition-all duration-500">
               {title}
             </h3>
-            <div className="w-12 h-1 bg-gradient-to-r from-[#4cb050] to-[#4cb050] rounded-full group-hover:w-20 transition-all duration-500"></div>
+            <div className="w-12 h-1 bg-gradient-to-r from-[#00bcd5] to-[#00bcd5] rounded-full group-hover:w-20 transition-all duration-500"></div>
           </div>
         </div>
 
@@ -54,18 +54,18 @@ export function MissionVisionCard({
         </div>
 
         {/* Bottom Border */}
-        <div className="mt-6 pt-4 border-t border-gray-100 group-hover:border-[#4cb050]/20 transition-colors duration-300">
+        <div className="mt-6 pt-4 border-t border-gray-100 group-hover:border-[#00bcd5]/20 transition-colors duration-300">
           <div className="flex items-center justify-between">
             <div className="flex space-x-2">
               {[...Array(3)].map((_, i) => (
                 <div
                   key={i}
-                  className="w-2 h-2 bg-[#4cb050]/30 rounded-full group-hover:bg-[#4cb050] transition-all duration-500"
+                  className="w-2 h-2 bg-[#00bcd5]/30 rounded-full group-hover:bg-[#00bcd5] transition-all duration-500"
                   style={{ transitionDelay: `${i * 100}ms` }}
                 ></div>
               ))}
             </div>
-            <div className="text-xs font-semibold text-[#4cb050]/60 group-hover:text-[#3fa242] transition-colors duration-300">
+            <div className="text-xs font-semibold text-[#00bcd5]/60 group-hover:text-[#3fa242] transition-colors duration-300">
               Faustware Soluções
             </div>
           </div>

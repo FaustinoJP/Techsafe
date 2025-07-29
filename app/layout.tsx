@@ -15,6 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link rel="shortcut icon" href="/logo_faustware1.jpg" type="image/x-icon" />
       <body>{children}</body>
     </html>
   )

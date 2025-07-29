@@ -97,7 +97,7 @@ export function ProfessionalHero({ locale }: ProfessionalHeroProps) {
               <div className="max-w-6xl">
                 <div className="mb-6">
                   <span className="inline-block px-4 py-2 bg-primary/20 backdrop-blur-sm rounded-full text-sm font-medium border border-primary/30">
-                    TechSafe Solutions
+                    Faustware Soluções
                   </span>
                 </div>
 
@@ -114,10 +114,9 @@ export function ProfessionalHero({ locale }: ProfessionalHeroProps) {
                     {t.heroButton}
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
-
                   <Button
                     variant="outline"
-                    className="border-white/30 text-white hover:bg-white/10 px-8 py-4 text-lg font-medium rounded-xl backdrop-blur-sm"
+                    className="border-white/30 text-black hover:bg-white/10 px-8 py-4 text-lg font-medium rounded-xl backdrop-blur-sm"
                   >
                     {locale === "pt"
                       ? "Ver Projetos"

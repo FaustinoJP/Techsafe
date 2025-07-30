@@ -61,34 +61,34 @@ export function ServiceCard({
       <div
         className="absolute inset-0 opacity-5 rounded-3xl"
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ea1e63' fillOpacity='0.1'%3E%3Cpath d='M30 30c0-8.3-6.7-15-15-15s-15 6.7-15 15 6.7 15 15 15 15-6.7 15-15zm15 0c0-8.3-6.7-15-15-15s-15 6.7-15 15 6.7 15 15 15 15-6.7 15-15z'/%3E%3C/g%3E%3C/svg%3E")`,
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ff9700' fillOpacity='0.1'%3E%3Cpath d='M30 30c0-8.3-6.7-15-15-15s-15 6.7-15 15 6.7 15 15 15 15-6.7 15-15zm15 0c0-8.3-6.7-15-15-15s-15 6.7-15 15 6.7 15 15 15 15-6.7 15-15z'/%3E%3C/g%3E%3C/svg%3E")`,
         }}
       />
 
       <Card
-        className="h-full bg-white/80 backdrop-blur-sm border-2 border-transparent group-hover:border-[#00bcd5]/20 transition-all duration-500 rounded-3xl shadow-lg group-hover:shadow-2xl relative overflow-hidden"
+        className="h-full bg-white/80 backdrop-blur-sm border-2 border-transparent group-hover:border-[#357af3]/20 transition-all duration-500 rounded-3xl shadow-lg group-hover:shadow-2xl relative overflow-hidden"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#00bcd5]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#357af3]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
 
         {/* Decorative Corner */}
-        <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#00bcd5]/10 to-transparent rounded-bl-3xl transform scale-0 group-hover:scale-100 transition-transform duration-500"></div>
+        <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#357af3]/10 to-transparent rounded-bl-3xl transform scale-0 group-hover:scale-100 transition-transform duration-500"></div>
 
         <CardHeader className="text-center pb-6 relative z-10">
           {/* Icon with Enhanced Effects */}
           <div className="relative mx-auto mb-6">
             <div className="absolute inset-0 bg-gradient-to-br from-[#ff9700] to-[#b56b00] rounded-2xl blur-lg opacity-0 group-hover:opacity-30 transition-opacity duration-500 scale-110"></div>
             <div
-              className={`relative w-20 h-20 bg-gradient-to-br from-[#ea1e63]/10 to-[#ea1e63]/5 rounded-2xl flex items-center justify-center transition-all duration-500 group-hover:from-[#ea1e63] group-hover:to-[#9a0436cd] group-hover:scale-110 group-hover:rotate-3 shadow-lg group-hover:shadow-xl`}
+              className={`relative w-20 h-20 bg-gradient-to-br from-[#ff9700]/10 to-[#ff9700]/5 rounded-2xl flex items-center justify-center transition-all duration-500 group-hover:from-[#ff9700] group-hover:to-[#9a0436cd] group-hover:scale-110 group-hover:rotate-3 shadow-lg group-hover:shadow-xl`}
             >
               <Icon
                 className={`h-10 w-10 text-[#ff9700] transition-all duration-500 group-hover:text-white group-hover:scale-110`}
               />
             </div>
             {/* Pulse Ring */}
-            <div className="absolute inset-0 border-2 border-[#ea1e63]/30 rounded-2xl scale-110 opacity-0 group-hover:opacity-100 group-hover:scale-125 transition-all duration-500"></div>
+            <div className="absolute inset-0 border-2 border-[#ff9700]/30 rounded-2xl scale-110 opacity-0 group-hover:opacity-100 group-hover:scale-125 transition-all duration-500"></div>
           </div>
 
           <CardTitle className="text-xl font-bold text-gray-800 group-hover:text-[#ff9700] transition-colors duration-300 mb-2">
@@ -109,17 +109,17 @@ export function ServiceCard({
               <DialogTrigger asChild>
                 <Button
                   variant="outline"
-                  className="w-full border-2 border-gray-200 hover:border-[#ff9700] hover:text-[#b56b00] hover:bg-[#ea1e63]/5 transition-all duration-300 rounded-xl py-3 group/btn"
+                  className="w-full border-2 border-gray-200 hover:border-[#ff9700] hover:text-[#b56b00] hover:bg-[#ff9700]/5 transition-all duration-300 rounded-xl py-3 group/btn"
                 >
                   <ExternalLink className="h-4 w-4 mr-2 group-hover/btn:rotate-12 transition-transform duration-300" />
                   {seeDetailsText}
                   <ArrowRight className="h-4 w-4 ml-auto opacity-0 group-hover/btn:opacity-100 group-hover/btn:translate-x-1 transition-all duration-300" />
                 </Button>
               </DialogTrigger>
-              <DialogContent className="max-w-2xl rounded-2xl border-2 border-[#ea1e63]/20">
+              <DialogContent className="max-w-2xl rounded-2xl border-2 border-[#ff9700]/20">
                 <DialogHeader>
                   <DialogTitle className="flex items-center gap-3 text-2xl mb-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-[#00bcd5] to-[#00bcd5] rounded-xl flex items-center justify-center shadow-lg">
+                    <div className="w-12 h-12 bg-gradient-to-br from-[#357af3] to-[#357af3] rounded-xl flex items-center justify-center shadow-lg">
                       <Icon className="h-6 w-6 text-white" />
                     </div>
                     <span className="bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
@@ -135,7 +135,7 @@ export function ServiceCard({
             {/* WhatsApp Button */}
             <Button
               onClick={handleWhatsAppClick}
-              className="w-full bg-gradient-to-r from-[#00bcd5] to-[#00bcd5] hover:from-[#137b89] hover:to-[#137b89] text-white rounded-xl py-3 shadow-lg hover:shadow-xl transition-all duration-300 group/whatsapp"
+              className="w-full bg-gradient-to-r from-[#357af3] to-[#357af3] hover:from-[#447ce0] hover:to-[#447ce0] text-white rounded-xl py-3 shadow-lg hover:shadow-xl transition-all duration-300 group/whatsapp"
             >
               <MessageCircle className="h-4 w-4 mr-2 group-hover/whatsapp:scale-110 transition-transform duration-300" />
               {contractServiceText}
@@ -149,7 +149,7 @@ export function ServiceCard({
               {[...Array(5)].map((_, i) => (
                 <div
                   key={i}
-                  className="w-1.5 h-1.5 bg-[#137b89]/20 rounded-full group-hover:bg-[#137b89]/60 transition-all duration-500"
+                  className="w-1.5 h-1.5 bg-[#447ce0]/20 rounded-full group-hover:bg-[#447ce0]/60 transition-all duration-500"
                   style={{ transitionDelay: `${i * 50}ms` }}
                 ></div>
               ))}

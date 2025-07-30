@@ -13,42 +13,42 @@ export function ContactInfo({ locale }: ContactInfoProps) {
       <div
         className="absolute inset-0 opacity-5 rounded-2xl"
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ea1e63' fillOpacity='0.1'%3E%3Cpath d='M20 20c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10zm10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z'/%3E%3C/g%3E%3C/svg%3E")`,
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ff9700' fillOpacity='0.1'%3E%3Cpath d='M20 20c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10zm10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z'/%3E%3C/g%3E%3C/svg%3E")`,
         }}
       />
 
       <div className="relative bg-white/80 backdrop-blur-sm border border-green-100/50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500">
         {/* Header */}
         <div className="text-center mb-8">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#ea1e63] to-[#ea1e63] rounded-2xl mb-4 shadow-lg">
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#ff9700] to-[#ff9700] rounded-2xl mb-4 shadow-lg">
             <Globe className="h-8 w-8 text-white" />
           </div>
           <h3 className="text-2xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-2">
             {locale === "pt" ? "Entre em Contato" : "Get In Touch"}
           </h3>
-          <div className="w-16 h-1 bg-gradient-to-r from-[#ea1e63] to-[#ea1e63] rounded-full mx-auto"></div>
+          <div className="w-16 h-1 bg-gradient-to-r from-[#ff9700] to-[#ff9700] rounded-full mx-auto"></div>
         </div>
 
         <div className="space-y-6">
           {/* Email */}
           <div className="group relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-[#ea1e63]/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <div className="relative flex items-center p-4 rounded-xl border border-transparent group-hover:border-[#ea1e63]/20 transition-all duration-300">
+            <div className="absolute inset-0 bg-gradient-to-r from-[#ff9700]/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="relative flex items-center p-4 rounded-xl border border-transparent group-hover:border-[#ff9700]/20 transition-all duration-300">
               <div className="relative">
-                <div className="w-12 h-12 bg-gradient-to-br from-[#ea1e63]/10 to-[#ea1e63]/5 rounded-xl flex items-center justify-center group-hover:from-[#ea1e63]/20 group-hover:to-[#ea1e63]/10 transition-all duration-300">
-                  <Mail className="h-6 w-6 text-[#ea1e63]" />
+                <div className="w-12 h-12 bg-gradient-to-br from-[#ff9700]/10 to-[#ff9700]/5 rounded-xl flex items-center justify-center group-hover:from-[#ff9700]/20 group-hover:to-[#ff9700]/10 transition-all duration-300">
+                  <Mail className="h-6 w-6 text-[#ff9700]" />
                 </div>
-                <div className="absolute -top-1 -right-1 w-3 h-3 bg-[#ea1e63] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute -top-1 -right-1 w-3 h-3 bg-[#ff9700] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               <div className="ml-4 flex-1">
                 <h4 className="text-lg font-semibold text-gray-800 mb-1">
                   Email
                 </h4>
                 <a
-                  href="mailto:info@techsafe-solutions.com"
-                  className="text-gray-600 hover:text-[#ea1e63] transition-colors duration-300 font-medium"
+                  href="mailto:info@faustware-solucoes.com"
+                  className="text-gray-600 hover:text-[#ff9700] transition-colors duration-300 font-medium"
                 >
-                  info@techsafe-solutions.com
+                  info@faustware-solucoes.com
                 </a>
               </div>
             </div>
@@ -56,13 +56,13 @@ export function ContactInfo({ locale }: ContactInfoProps) {
 
           {/* Phone */}
           <div className="group relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-[#ea1e63]/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <div className="relative flex items-center p-4 rounded-xl border border-transparent group-hover:border-[#ea1e63]/20 transition-all duration-300">
+            <div className="absolute inset-0 bg-gradient-to-r from-[#ff9700]/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="relative flex items-center p-4 rounded-xl border border-transparent group-hover:border-[#ff9700]/20 transition-all duration-300">
               <div className="relative">
-                <div className="w-12 h-12 bg-gradient-to-br from-[#ea1e63]/10 to-[#ea1e63]/5 rounded-xl flex items-center justify-center group-hover:from-[#ea1e63]/20 group-hover:to-[#ea1e63]/10 transition-all duration-300">
-                  <Phone className="h-6 w-6 text-[#ea1e63]" />
+                <div className="w-12 h-12 bg-gradient-to-br from-[#ff9700]/10 to-[#ff9700]/5 rounded-xl flex items-center justify-center group-hover:from-[#ff9700]/20 group-hover:to-[#ff9700]/10 transition-all duration-300">
+                  <Phone className="h-6 w-6 text-[#ff9700]" />
                 </div>
-                <div className="absolute -top-1 -right-1 w-3 h-3 bg-[#ea1e63] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute -top-1 -right-1 w-3 h-3 bg-[#ff9700] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               <div className="ml-4 flex-1">
                 <h4 className="text-lg font-semibold text-gray-800 mb-1">
@@ -70,7 +70,7 @@ export function ContactInfo({ locale }: ContactInfoProps) {
                 </h4>
                 <a
                   href="tel:+244951588735"
-                  className="text-gray-600 hover:text-[#ea1e63] transition-colors duration-300 font-medium"
+                  className="text-gray-600 hover:text-[#ff9700] transition-colors duration-300 font-medium"
                 >
                   +244 951 588 735
                 </a>
@@ -80,13 +80,13 @@ export function ContactInfo({ locale }: ContactInfoProps) {
 
           {/* Location */}
           <div className="group relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-[#ea1e63]/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <div className="relative flex items-center p-4 rounded-xl border border-transparent group-hover:border-[#ea1e63]/20 transition-all duration-300">
+            <div className="absolute inset-0 bg-gradient-to-r from-[#ff9700]/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="relative flex items-center p-4 rounded-xl border border-transparent group-hover:border-[#ff9700]/20 transition-all duration-300">
               <div className="relative">
-                <div className="w-12 h-12 bg-gradient-to-br from-[#ea1e63]/10 to-[#ea1e63]/5 rounded-xl flex items-center justify-center group-hover:from-[#ea1e63]/20 group-hover:to-[#ea1e63]/10 transition-all duration-300">
-                  <MapPin className="h-6 w-6 text-[#ea1e63]" />
+                <div className="w-12 h-12 bg-gradient-to-br from-[#ff9700]/10 to-[#ff9700]/5 rounded-xl flex items-center justify-center group-hover:from-[#ff9700]/20 group-hover:to-[#ff9700]/10 transition-all duration-300">
+                  <MapPin className="h-6 w-6 text-[#ff9700]" />
                 </div>
-                <div className="absolute -top-1 -right-1 w-3 h-3 bg-[#ea1e63] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute -top-1 -right-1 w-3 h-3 bg-[#ff9700] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               <div className="ml-4 flex-1">
                 <h4 className="text-lg font-semibold text-gray-800 mb-1">
@@ -99,10 +99,10 @@ export function ContactInfo({ locale }: ContactInfoProps) {
 
           {/* Business Hours */}
           <div className="relative mt-8">
-            <div className="absolute inset-0 bg-gradient-to-br from-[#ea1e63]/5 to-green-50/50 rounded-xl"></div>
-            <div className="relative p-6 rounded-xl border border-[#ea1e63]/10">
+            <div className="absolute inset-0 bg-gradient-to-br from-[#ff9700]/5 to-green-50/50 rounded-xl"></div>
+            <div className="relative p-6 rounded-xl border border-[#ff9700]/10">
               <div className="flex items-center mb-4">
-                <div className="w-10 h-10 bg-gradient-to-br from-[#ea1e63] to-[#ea1e63] rounded-lg flex items-center justify-center shadow-md">
+                <div className="w-10 h-10 bg-gradient-to-br from-[#ff9700] to-[#ff9700] rounded-lg flex items-center justify-center shadow-md">
                   <Clock className="h-5 w-5 text-white" />
                 </div>
                 <h4 className="text-lg font-bold text-gray-800 ml-3">
@@ -117,7 +117,7 @@ export function ContactInfo({ locale }: ContactInfoProps) {
                   <span className="font-semibold text-gray-700">
                     {locale === "pt" ? "Segunda - Sexta:" : "Monday - Friday:"}
                   </span>
-                  <span className="text-[#ea1e63] font-bold">
+                  <span className="text-[#ff9700] font-bold">
                     08:00 - 18:00
                   </span>
                 </div>
@@ -125,7 +125,7 @@ export function ContactInfo({ locale }: ContactInfoProps) {
                   <span className="font-semibold text-gray-700">
                     {locale === "pt" ? "Sábado:" : "Saturday:"}
                   </span>
-                  <span className="text-[#ea1e63] font-bold">
+                  <span className="text-[#ff9700] font-bold">
                     08:00 - 14:00
                   </span>
                 </div>
@@ -142,9 +142,9 @@ export function ContactInfo({ locale }: ContactInfoProps) {
           </div>
 
           {/* Trust Badge */}
-          <div className="mt-6 p-4 bg-gradient-to-r from-[#ea1e63]/10 to-green-50/50 rounded-xl border border-[#ea1e63]/20">
+          <div className="mt-6 p-4 bg-gradient-to-r from-[#ff9700]/10 to-green-50/50 rounded-xl border border-[#ff9700]/20">
             <div className="flex items-center justify-center">
-              <Shield className="h-5 w-5 text-[#ea1e63] mr-2" />
+              <Shield className="h-5 w-5 text-[#ff9700] mr-2" />
               <span className="text-sm font-semibold text-gray-700">
                 {locale === "pt"
                   ? "Soluções Certificadas & Confiáveis"

@@ -37,7 +37,7 @@ export function ModernStats({ locale }: ModernStatsProps) {
       icon: Award,
       value: "15+",
       label: locale === "pt" ? "Anos de Experiência" : "Years of Experience",
-      color: "from-[#ea1e63] to-[#ea1e63]",
+      color: "from-[#ff9700] to-[#ff9700]",
       description:
         locale === "pt"
           ? "Décadas de expertise no mercado"
@@ -57,7 +57,7 @@ export function ModernStats({ locale }: ModernStatsProps) {
       icon: Users,
       value: "100+",
       label: locale === "pt" ? "Clientes Satisfeitos" : "Satisfied Clients",
-      color: "from-purple-500 to-purple-600",
+      color: "from-[#4cb050] to-[#4cb050] ",
       description:
         locale === "pt"
           ? "Parcerias duradouras estabelecidas"
@@ -77,7 +77,7 @@ export function ModernStats({ locale }: ModernStatsProps) {
       icon: Shield,
       value: "100%",
       label: locale === "pt" ? "Conformidade" : "Compliance",
-      color: "from-red-500 to-red-600",
+      color: "from-[#00bcd5] to-[#00bcd5] ",
       description:
         locale === "pt"
           ? "Total aderência às normas"
@@ -87,7 +87,7 @@ export function ModernStats({ locale }: ModernStatsProps) {
       icon: TrendingUp,
       value: "99%",
       label: locale === "pt" ? "Taxa de Sucesso" : "Success Rate",
-      color: "from-green-500 to-green-600",
+      color: "from-blue-500 to-blue-600",
       description:
         locale === "pt" ? "Eficiência comprovada" : "Proven efficiency",
     },
@@ -137,7 +137,7 @@ export function ModernStats({ locale }: ModernStatsProps) {
     >
       {/* Dynamic Background Elements */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-[#00bcd5] rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute top-20 left-10 w-72 h-72 bg-[#357af3] rounded-full blur-3xl animate-pulse"></div>
         <div
           className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500 rounded-full blur-3xl animate-pulse"
           style={{ animationDelay: "1s" }}
@@ -151,7 +151,7 @@ export function ModernStats({ locale }: ModernStatsProps) {
       {/* Floating Geometric Shapes */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div
-          className="absolute top-1/4 left-1/4 w-4 h-4 bg-[#ea1e63]/20 rotate-45 animate-bounce"
+          className="absolute top-1/4 left-1/4 w-4 h-4 bg-[#ff9700]/20 rotate-45 animate-bounce"
           style={{ animationDelay: "0.5s" }}
         ></div>
         <div
@@ -167,9 +167,9 @@ export function ModernStats({ locale }: ModernStatsProps) {
       <div className="container mx-auto px-4 relative z-10">
         {/* Header Section */}
         <div className="text-center mb-20">
-          <div className="inline-flex items-center gap-2 bg-[#ea1e63]/10 rounded-full px-6 py-2 mb-6">
-            <Star className="h-5 w-5 text-[#ea1e63]" />
-            <span className="text-[#ea1e63] font-semibold text-sm uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 bg-[#ff9700]/10 rounded-full px-6 py-2 mb-6">
+            <Star className="h-5 w-5 text-[#ff9700]" />
+            <span className="text-[#ff9700] font-semibold text-sm uppercase tracking-wider">
               {locale === "pt" ? "Nossos Números" : "Our Numbers"}
             </span>
           </div>
@@ -178,7 +178,7 @@ export function ModernStats({ locale }: ModernStatsProps) {
             <span className="bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
               {locale === "pt" ? "Resultados que " : "Results that "}
             </span>
-            <span className="bg-gradient-to-r from-[#ea1e63] to-[#ea1e63] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#ff9700] to-[#ff9700] bg-clip-text text-transparent">
               {locale === "pt" ? "Impressionam" : "Impress"}
             </span>
           </h2>
@@ -203,43 +203,36 @@ export function ModernStats({ locale }: ModernStatsProps) {
               style={{ transitionDelay: `${index * 150}ms` }}
             >
               {/* Card Container */}
-              <div className="relative h-full bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-lg group-hover:shadow-2xl transition-all duration-500 border-2 border-transparent group-hover:border-[#ea1e63]/20 overflow-hidden">
+              <div className="relative h-full bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-lg group-hover:shadow-2xl transition-all duration-500 border-2 border-transparent group-hover:border-[#ff9700]/20 overflow-hidden">
                 {/* Background Pattern */}
                 <div
                   className="absolute inset-0 opacity-5 rounded-3xl"
                   style={{
-                    backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ea1e63' fillOpacity='0.1'%3E%3Cpath d='M20 20c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10zm10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z'/%3E%3C/g%3E%3C/svg%3E")`,
+                    backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ff9700' fillOpacity='0.1'%3E%3Cpath d='M20 20c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10zm10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z'/%3E%3C/g%3E%3C/svg%3E")`,
                   }}
                 />
 
                 {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-br from-[#ea1e63]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-br  to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
 
                 {/* Decorative Elements */}
-                <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-[#ea1e63]/10 to-transparent rounded-bl-3xl transform scale-0 group-hover:scale-100 transition-transform duration-500"></div>
+                <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br  to-transparent rounded-bl-3xl transform scale-0 group-hover:scale-100 transition-transform duration-500"></div>
 
                 <div className="relative z-10">
                   {/* Icon */}
                   <div className="relative mb-8">
-                    <div
-                      className={`absolute inset-0 bg-gradient-to-br ${stat.color} rounded-2xl blur-lg opacity-0 group-hover:opacity-40 transition-opacity duration-500 scale-110`}
-                    ></div>
                     <div
                       className={`relative w-20 h-20 bg-gradient-to-br ${stat.color} rounded-2xl flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 shadow-lg group-hover:shadow-xl`}
                     >
                       <stat.icon className="h-10 w-10 text-white" />
                     </div>
                     {/* Pulse Ring */}
-                    <div
-                      className={`absolute inset-0 border-2 border-current rounded-2xl scale-110 opacity-0 group-hover:opacity-30 group-hover:scale-125 transition-all duration-500`}
-                      style={{ color: stat.color.split(" ")[1] }}
-                    ></div>
                   </div>
 
                   {/* Content */}
                   <div className="text-center">
                     {/* Animated Value */}
-                    <div className="text-5xl font-bold text-gray-900 mb-3 group-hover:text-[#ea1e63] transition-colors duration-300 relative">
+                    <div className="text-5xl font-bold text-gray-900 mb-3 group-hover:text-[#ff9700] transition-colors duration-300 relative">
                       {stat.value.includes("+") ||
                       stat.value.includes("%") ||
                       stat.value.includes("/")
@@ -252,7 +245,7 @@ export function ModernStats({ locale }: ModernStatsProps) {
                     </div>
 
                     {/* Label */}
-                    <h3 className="text-lg font-semibold text-gray-800 mb-2 group-hover:text-[#ea1e63] transition-colors duration-300">
+                    <h3 className="text-lg font-semibold text-gray-800 mb-2 group-hover:text-[#ff9700] transition-colors duration-300">
                       {stat.label}
                     </h3>
 
@@ -273,7 +266,7 @@ export function ModernStats({ locale }: ModernStatsProps) {
                       {[...Array(5)].map((_, i) => (
                         <div
                           key={i}
-                          className="w-1.5 h-1.5 bg-[#ea1e63]/20 rounded-full group-hover:bg-[#ea1e63]/60 transition-all duration-500"
+                          className="w-1.5 h-1.5 bg-[#ff9700]/20 rounded-full group-hover:bg-[#ff9700]/60 transition-all duration-500"
                           style={{ transitionDelay: `${i * 100}ms` }}
                         ></div>
                       ))}
@@ -282,7 +275,7 @@ export function ModernStats({ locale }: ModernStatsProps) {
                 </div>
 
                 {/* Hover Border Effect */}
-                <div className="absolute inset-0 rounded-3xl border-2 border-transparent group-hover:border-[#ea1e63]/20 transition-colors duration-500"></div>
+                <div className="absolute inset-0 rounded-3xl border-2 border-transparent group-hover:border-[#ff9700]/20 transition-colors duration-500"></div>
               </div>
             </div>
           ))}
@@ -290,7 +283,7 @@ export function ModernStats({ locale }: ModernStatsProps) {
 
         {/* Bottom CTA Section */}
         <div className="text-center mt-20">
-          <div className="inline-flex items-center gap-3 bg-gradient-to-r from-[#ea1e63] to-[#ea1e63] text-white px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer">
+          <div className="inline-flex items-center gap-3 bg-gradient-to-r from-[#ff9700] to-[#ff9700] text-white px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer">
             <TrendingUp className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
             <span className="font-semibold">
               {locale === "pt"

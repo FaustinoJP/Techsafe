@@ -83,10 +83,10 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ea1e63;
+  background: #ff9700;
   border-radius: 2px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ea1e63;
+  background: #ff9700;
 }

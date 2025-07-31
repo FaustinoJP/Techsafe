@@ -125,13 +125,13 @@ export function VideoSection({ locale }: VideoSectionProps) {
         <div
           className="absolute inset-0"
           style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fillRule='evenodd'%3E%3Cg fill='%23ff9700' fillOpacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fillRule='evenodd'%3E%3Cg fill='%23ff0000' fillOpacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
           }}
         />
       </div>
 
       {/* Decorative Elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-[#ff9700]/10 to-transparent rounded-full transform translate-x-48 -translate-y-48"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-[#ff0000]/10 to-transparent rounded-full transform translate-x-48 -translate-y-48"></div>
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-green-100/30 to-transparent rounded-full transform -translate-x-40 translate-y-40"></div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -139,7 +139,7 @@ export function VideoSection({ locale }: VideoSectionProps) {
           <h2 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-6">
             {getTitle()}
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#ff9700] to-[#ff9700] rounded-full mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#ff0000] to-[#ff0000] rounded-full mx-auto mb-6"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             {getSubtitle()}
           </p>
@@ -150,7 +150,7 @@ export function VideoSection({ locale }: VideoSectionProps) {
           <div className="group relative mb-16">
             {/* Background Effects */}
             <div className="absolute inset-0 bg-gradient-to-br from-white to-slate-50 rounded-3xl shadow-2xl"></div>
-            <div className="absolute inset-0 bg-gradient-to-br from-[#ff9700]/5 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-[#ff0000]/5 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
 
             {/* Video Wrapper */}
             <div className="relative p-4 rounded-3xl">
@@ -175,7 +175,7 @@ export function VideoSection({ locale }: VideoSectionProps) {
                       <Button
                         onClick={handlePlayPause}
                         size="lg"
-                        className="bg-gradient-to-br from-[#ff9700] to-[#ff9700] hover:from-[#ff9700] hover:to-[#ea1e62dd] text-white rounded-full w-20 h-20 flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-all duration-300 border-0"
+                        className="bg-gradient-to-br from-[#ff0000] to-[#ff0000] hover:from-[#ff0000] hover:to-[#ea1e62dd] text-white rounded-full w-20 h-20 flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-all duration-300 border-0"
                       >
                         {isPlaying ? (
                           <Pause className="h-10 w-10" />
@@ -184,9 +184,9 @@ export function VideoSection({ locale }: VideoSectionProps) {
                         )}
                       </Button>
                       {/* Glow Effect */}
-                      <div className="absolute inset-0 bg-gradient-to-br from-[#ff9700] to-[#ea1e62dd] rounded-full blur-lg opacity-0 group-hover:opacity-40 transition-opacity duration-500 -z-10"></div>
+                      <div className="absolute inset-0 bg-gradient-to-br from-[#ff0000] to-[#ea1e62dd] rounded-full blur-lg opacity-0 group-hover:opacity-40 transition-opacity duration-500 -z-10"></div>
                       {/* Pulse Ring */}
-                      <div className="absolute inset-0 border-2 border-[#ff9700]/30 rounded-full scale-110 opacity-0 group-hover:opacity-100 group-hover:scale-125 transition-all duration-500"></div>
+                      <div className="absolute inset-0 border-2 border-[#ff0000]/30 rounded-full scale-110 opacity-0 group-hover:opacity-100 group-hover:scale-125 transition-all duration-500"></div>
                     </div>
 
                     {/* Mute Button */}
@@ -234,7 +234,7 @@ export function VideoSection({ locale }: VideoSectionProps) {
                           ? "Durata"
                           : "Duration"}
                       </div>
-                      <div className="text-2xl font-bold text-[#ff9700]">
+                      <div className="text-2xl font-bold text-[#ff0000]">
                         2:30
                       </div>
                     </div>
@@ -244,7 +244,7 @@ export function VideoSection({ locale }: VideoSectionProps) {
             </div>
 
             {/* Hover Border */}
-            <div className="absolute inset-0 rounded-3xl border-2 border-transparent group-hover:border-[#ff9700]/20 transition-all duration-500"></div>
+            <div className="absolute inset-0 rounded-3xl border-2 border-transparent group-hover:border-[#ff0000]/20 transition-all duration-500"></div>
           </div>
 
           {/* Feature Cards */}
@@ -253,10 +253,10 @@ export function VideoSection({ locale }: VideoSectionProps) {
               <div key={index} className="group relative h-full">
                 {/* Background Effects */}
                 <div className="absolute inset-0 bg-gradient-to-br from-white to-slate-50 rounded-2xl shadow-lg"></div>
-                <div className="absolute inset-0 bg-gradient-to-br from-[#ff9700]/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-[#ff0000]/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
 
                 {/* Decorative Elements */}
-                <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-[#ff9700]/10 to-transparent rounded-2xl transform rotate-45 translate-x-12 -translate-y-12 group-hover:from-[#ff9700]/20 transition-all duration-500"></div>
+                <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-[#ff0000]/10 to-transparent rounded-2xl transform rotate-45 translate-x-12 -translate-y-12 group-hover:from-[#ff0000]/20 transition-all duration-500"></div>
                 <div className="absolute bottom-0 left-0 w-16 h-16 bg-gradient-to-tr from-green-100/50 to-transparent rounded-full transform -translate-x-8 translate-y-8 group-hover:scale-110 transition-transform duration-500"></div>
 
                 {/* Main Content */}
@@ -264,13 +264,13 @@ export function VideoSection({ locale }: VideoSectionProps) {
                   {/* Icon and Number */}
                   <div className="relative mb-6 mx-auto">
                     {/* Icon Container */}
-                    <div className="w-20 h-20 bg-gradient-to-br from-[#ff9700] to-[#ea1e62dd] rounded-2xl flex items-center justify-center shadow-xl group-hover:shadow-2xl group-hover:scale-110 transition-all duration-500 mx-auto mb-4">
+                    <div className="w-20 h-20 bg-gradient-to-br from-[#ff0000] to-[#ea1e62dd] rounded-2xl flex items-center justify-center shadow-xl group-hover:shadow-2xl group-hover:scale-110 transition-all duration-500 mx-auto mb-4">
                       <feature.icon className="h-10 w-10 text-white" />
                     </div>
                     {/* Glow Effect */}
                     <div className="absolute inset-0 bg-gradient-to-br from-[#357af3] to-[#357af3] rounded-2xl blur-lg opacity-0 group-hover:opacity-30 transition-opacity duration-500 -z-10"></div>
                     {/* Pulse Ring */}
-                    <div className="absolute inset-0 border-2 border-[#ff9700]/30 rounded-2xl scale-110 opacity-0 group-hover:opacity-100 group-hover:scale-125 transition-all duration-500"></div>
+                    <div className="absolute inset-0 border-2 border-[#ff0000]/30 rounded-2xl scale-110 opacity-0 group-hover:opacity-100 group-hover:scale-125 transition-all duration-500"></div>
 
                     {/* Number Badge */}
                     <div className="absolute -top-2 -right-2 bg-gradient-to-br from-[#357af3] to-[#357af3] text-white text-sm font-bold px-3 py-1 rounded-full shadow-lg">
@@ -279,12 +279,12 @@ export function VideoSection({ locale }: VideoSectionProps) {
                   </div>
 
                   {/* Title */}
-                  <h4 className="text-xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-3 group-hover:from-[#ff9700] group-hover:to-[#ea1e62dd] transition-all duration-500">
+                  <h4 className="text-xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-3 group-hover:from-[#ff0000] group-hover:to-[#ea1e62dd] transition-all duration-500">
                     {feature.title[locale] || feature.title.en}
                   </h4>
 
                   {/* Divider */}
-                  <div className="w-12 h-1 bg-gradient-to-r from-[#ff9700] to-[#ea1e62dd] rounded-full mx-auto mb-4 group-hover:w-16 transition-all duration-500"></div>
+                  <div className="w-12 h-1 bg-gradient-to-r from-[#ff0000] to-[#ea1e62dd] rounded-full mx-auto mb-4 group-hover:w-16 transition-all duration-500"></div>
 
                   {/* Description */}
                   <p className="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300 flex-1">
@@ -292,7 +292,7 @@ export function VideoSection({ locale }: VideoSectionProps) {
                   </p>
 
                   {/* Bottom Elements */}
-                  <div className="mt-6 pt-4 border-t border-gray-100 group-hover:border-[#ff9700]/20 transition-colors duration-300">
+                  <div className="mt-6 pt-4 border-t border-gray-100 group-hover:border-[#ff0000]/20 transition-colors duration-300">
                     <div className="flex items-center justify-between">
                       <div className="flex space-x-2">
                         {[...Array(3)].map((_, i) => (
@@ -311,7 +311,7 @@ export function VideoSection({ locale }: VideoSectionProps) {
                 </div>
 
                 {/* Hover Border */}
-                <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-[#ff9700]/20 transition-all duration-500"></div>
+                <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-[#ff0000]/20 transition-all duration-500"></div>
               </div>
             ))}
           </div>

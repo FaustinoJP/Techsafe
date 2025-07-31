@@ -37,7 +37,7 @@ export function ModernStats({ locale }: ModernStatsProps) {
       icon: Award,
       value: "15+",
       label: locale === "pt" ? "Anos de Experiência" : "Years of Experience",
-      color: "from-[#ff9700] to-[#ff9700]",
+      color: "from-[#ff0000] to-[#ff0000]",
       description:
         locale === "pt"
           ? "Décadas de expertise no mercado"
@@ -151,7 +151,7 @@ export function ModernStats({ locale }: ModernStatsProps) {
       {/* Floating Geometric Shapes */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div
-          className="absolute top-1/4 left-1/4 w-4 h-4 bg-[#ff9700]/20 rotate-45 animate-bounce"
+          className="absolute top-1/4 left-1/4 w-4 h-4 bg-[#ff0000]/20 rotate-45 animate-bounce"
           style={{ animationDelay: "0.5s" }}
         ></div>
         <div
@@ -167,9 +167,9 @@ export function ModernStats({ locale }: ModernStatsProps) {
       <div className="container mx-auto px-4 relative z-10">
         {/* Header Section */}
         <div className="text-center mb-20">
-          <div className="inline-flex items-center gap-2 bg-[#ff9700]/10 rounded-full px-6 py-2 mb-6">
-            <Star className="h-5 w-5 text-[#ff9700]" />
-            <span className="text-[#ff9700] font-semibold text-sm uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 bg-[#ff0000]/10 rounded-full px-6 py-2 mb-6">
+            <Star className="h-5 w-5 text-[#ff0000]" />
+            <span className="text-[#ff0000] font-semibold text-sm uppercase tracking-wider">
               {locale === "pt" ? "Nossos Números" : "Our Numbers"}
             </span>
           </div>
@@ -178,7 +178,7 @@ export function ModernStats({ locale }: ModernStatsProps) {
             <span className="bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
               {locale === "pt" ? "Resultados que " : "Results that "}
             </span>
-            <span className="bg-gradient-to-r from-[#ff9700] to-[#ff9700] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#ff0000] to-[#ff0000] bg-clip-text text-transparent">
               {locale === "pt" ? "Impressionam" : "Impress"}
             </span>
           </h2>
@@ -203,12 +203,12 @@ export function ModernStats({ locale }: ModernStatsProps) {
               style={{ transitionDelay: `${index * 150}ms` }}
             >
               {/* Card Container */}
-              <div className="relative h-full bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-lg group-hover:shadow-2xl transition-all duration-500 border-2 border-transparent group-hover:border-[#ff9700]/20 overflow-hidden">
+              <div className="relative h-full bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-lg group-hover:shadow-2xl transition-all duration-500 border-2 border-transparent group-hover:border-[#ff0000]/20 overflow-hidden">
                 {/* Background Pattern */}
                 <div
                   className="absolute inset-0 opacity-5 rounded-3xl"
                   style={{
-                    backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ff9700' fillOpacity='0.1'%3E%3Cpath d='M20 20c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10zm10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z'/%3E%3C/g%3E%3C/svg%3E")`,
+                    backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ff0000' fillOpacity='0.1'%3E%3Cpath d='M20 20c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10zm10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z'/%3E%3C/g%3E%3C/svg%3E")`,
                   }}
                 />
 
@@ -232,7 +232,7 @@ export function ModernStats({ locale }: ModernStatsProps) {
                   {/* Content */}
                   <div className="text-center">
                     {/* Animated Value */}
-                    <div className="text-5xl font-bold text-gray-900 mb-3 group-hover:text-[#ff9700] transition-colors duration-300 relative">
+                    <div className="text-5xl font-bold text-gray-900 mb-3 group-hover:text-[#ff0000] transition-colors duration-300 relative">
                       {stat.value.includes("+") ||
                       stat.value.includes("%") ||
                       stat.value.includes("/")
@@ -245,7 +245,7 @@ export function ModernStats({ locale }: ModernStatsProps) {
                     </div>
 
                     {/* Label */}
-                    <h3 className="text-lg font-semibold text-gray-800 mb-2 group-hover:text-[#ff9700] transition-colors duration-300">
+                    <h3 className="text-lg font-semibold text-gray-800 mb-2 group-hover:text-[#ff0000] transition-colors duration-300">
                       {stat.label}
                     </h3>
 
@@ -266,7 +266,7 @@ export function ModernStats({ locale }: ModernStatsProps) {
                       {[...Array(5)].map((_, i) => (
                         <div
                           key={i}
-                          className="w-1.5 h-1.5 bg-[#ff9700]/20 rounded-full group-hover:bg-[#ff9700]/60 transition-all duration-500"
+                          className="w-1.5 h-1.5 bg-[#ff0000]/20 rounded-full group-hover:bg-[#ff0000]/60 transition-all duration-500"
                           style={{ transitionDelay: `${i * 100}ms` }}
                         ></div>
                       ))}
@@ -275,7 +275,7 @@ export function ModernStats({ locale }: ModernStatsProps) {
                 </div>
 
                 {/* Hover Border Effect */}
-                <div className="absolute inset-0 rounded-3xl border-2 border-transparent group-hover:border-[#ff9700]/20 transition-colors duration-500"></div>
+                <div className="absolute inset-0 rounded-3xl border-2 border-transparent group-hover:border-[#ff0000]/20 transition-colors duration-500"></div>
               </div>
             </div>
           ))}
@@ -283,7 +283,7 @@ export function ModernStats({ locale }: ModernStatsProps) {
 
         {/* Bottom CTA Section */}
         <div className="text-center mt-20">
-          <div className="inline-flex items-center gap-3 bg-gradient-to-r from-[#ff9700] to-[#ff9700] text-white px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer">
+          <div className="inline-flex items-center gap-3 bg-gradient-to-r from-[#ff0000] to-[#ff0000] text-white px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer">
             <TrendingUp className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
             <span className="font-semibold">
               {locale === "pt"

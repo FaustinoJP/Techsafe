@@ -24,14 +24,14 @@ const config: Config = {
       },
       colors: {
         primary: {
-          DEFAULT: "#ff9700", // vinho do logo
+          DEFAULT: "#ff0000", // vinho do logo
           50: "#e6f7f0",
           100: "#ccefe1",
           200: "#99dfc3",
           300: "#66cfa5",
           400: "#33bf87",
           500: "#00af69",
-          600: "#ff9700", // Base
+          600: "#ff0000", // Base
           700: "#cb2e63",
           800: "#00603c",
           900: "#00452b",
@@ -51,7 +51,7 @@ const config: Config = {
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
-        ring: "#ff9700",
+        ring: "#ff0000",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         destructive: {

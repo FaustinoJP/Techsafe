@@ -95,16 +95,16 @@ export function ContactForm({ locale, translations: t }: ContactFormProps) {
         <div
           className="absolute inset-0 opacity-5 rounded-3xl"
           style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ff9700' fillOpacity='0.1'%3E%3Cpath d='M20 20c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10zm10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z'/%3E%3C/g%3E%3C/svg%3E")`,
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ff0000' fillOpacity='0.1'%3E%3Cpath d='M20 20c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10zm10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z'/%3E%3C/g%3E%3C/svg%3E")`,
           }}
         />
 
         {/* Floating Elements */}
-        <div className="absolute top-6 right-6 w-16 h-16 bg-gradient-to-br from-[#ff9700]/10 to-emerald-500/5 rounded-full blur-lg animate-pulse"></div>
-        <div className="absolute bottom-6 left-6 w-12 h-12 bg-gradient-to-tr from-green-400/10 to-[#ff9700]/10 rounded-full blur-md animate-bounce"></div>
+        <div className="absolute top-6 right-6 w-16 h-16 bg-gradient-to-br from-[#ff0000]/10 to-emerald-500/5 rounded-full blur-lg animate-pulse"></div>
+        <div className="absolute bottom-6 left-6 w-12 h-12 bg-gradient-to-tr from-green-400/10 to-[#ff0000]/10 rounded-full blur-md animate-bounce"></div>
 
         <div className="relative bg-white/90 backdrop-blur-sm border border-green-100/50 rounded-3xl p-12 shadow-2xl text-center">
-          <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-[#ff9700] to-[#ff9700] rounded-2xl mb-6 shadow-lg animate-bounce">
+          <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-[#ff0000] to-[#ff0000] rounded-2xl mb-6 shadow-lg animate-bounce">
             <CheckCircle className="h-10 w-10 text-white" />
           </div>
 
@@ -121,16 +121,16 @@ export function ContactForm({ locale, translations: t }: ContactFormProps) {
           <h3 className="text-3xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-4">
             {locale === "pt" ? "Mensagem Enviada!" : "Message Sent!"}
           </h3>
-          <div className="w-20 h-1 bg-gradient-to-r from-[#ff9700] to-[#ff9700] rounded-full mx-auto mb-4"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-[#ff0000] to-[#ff0000] rounded-full mx-auto mb-4"></div>
           <p className="text-gray-600 text-lg font-medium">
             {locale === "pt"
               ? "Obrigado pelo seu interesse. Entraremos em contato em breve!"
               : "Thank you for your interest. We will contact you soon!"}
           </p>
 
-          <div className="mt-6 p-4 bg-gradient-to-r from-[#ff9700]/10 to-green-50/50 rounded-xl border border-[#ff9700]/20">
+          <div className="mt-6 p-4 bg-gradient-to-r from-[#ff0000]/10 to-green-50/50 rounded-xl border border-[#ff0000]/20">
             <div className="flex items-center justify-center">
-              <Sparkles className="h-5 w-5 text-[#ff9700] mr-2" />
+              <Sparkles className="h-5 w-5 text-[#ff0000] mr-2" />
               <span className="text-sm font-semibold text-gray-700">
                 {locale === "pt"
                   ? "Resposta dentro de 24 horas"
@@ -150,24 +150,24 @@ export function ContactForm({ locale, translations: t }: ContactFormProps) {
       <div
         className="absolute inset-0 opacity-5 rounded-3xl"
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ff9700' fillOpacity='0.1'%3E%3Cpath d='M20 20c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10zm10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z'/%3E%3C/g%3E%3C/svg%3E")`,
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ff0000' fillOpacity='0.1'%3E%3Cpath d='M20 20c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10zm10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z'/%3E%3C/g%3E%3C/svg%3E")`,
         }}
       />
 
       {/* Floating Elements */}
-      <div className="absolute top-6 right-6 w-16 h-16 bg-gradient-to-br from-[#ff9700]/10 to-emerald-500/5 rounded-full blur-lg animate-pulse"></div>
-      <div className="absolute bottom-6 left-6 w-12 h-12 bg-gradient-to-tr from-green-400/10 to-[#ff9700]/10 rounded-full blur-md animate-bounce"></div>
+      <div className="absolute top-6 right-6 w-16 h-16 bg-gradient-to-br from-[#ff0000]/10 to-emerald-500/5 rounded-full blur-lg animate-pulse"></div>
+      <div className="absolute bottom-6 left-6 w-12 h-12 bg-gradient-to-tr from-green-400/10 to-[#ff0000]/10 rounded-full blur-md animate-bounce"></div>
 
       <div className="relative bg-white/90 backdrop-blur-sm border border-green-100/50 rounded-3xl p-10 shadow-2xl hover:shadow-3xl transition-all duration-500">
         {/* Enhanced Header */}
         <div className="text-center mb-10">
-          <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-[#ff9700] to-[#ff9700] rounded-2xl mb-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+          <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-[#ff0000] to-[#ff0000] rounded-2xl mb-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
             <Mail className="h-10 w-10 text-white" />
           </div>
           <h3 className="text-3xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-3">
             {t.requestQuote}
           </h3>
-          <div className="w-20 h-1 bg-gradient-to-r from-[#ff9700] to-[#ff9700] rounded-full mx-auto mb-4"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-[#ff0000] to-[#ff0000] rounded-full mx-auto mb-4"></div>
           <p className="text-gray-600 text-lg font-medium max-w-md mx-auto">
             {locale === "pt"
               ? "Preencha o formulário e receba um orçamento personalizado"
@@ -179,13 +179,13 @@ export function ContactForm({ locale, translations: t }: ContactFormProps) {
           {/* Name and Email Row */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-[#ff9700]/5 to-transparent rounded-xl opacity-0 group-focus-within:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#ff0000]/5 to-transparent rounded-xl opacity-0 group-focus-within:opacity-100 transition-opacity duration-300"></div>
               <div className="relative">
                 <Label
                   htmlFor="name"
                   className="flex items-center text-sm font-semibold text-gray-700 mb-3"
                 >
-                  <User className="h-4 w-4 text-[#ff9700] mr-2" />
+                  <User className="h-4 w-4 text-[#ff0000] mr-2" />
                   {t.formName}
                 </Label>
                 <Input
@@ -193,7 +193,7 @@ export function ContactForm({ locale, translations: t }: ContactFormProps) {
                   value={formData.name}
                   onChange={(e) => handleInputChange("name", e.target.value)}
                   required
-                  className="h-12 border-2 border-gray-200 focus:border-[#ff9700] focus:ring-[#ff9700] rounded-xl bg-white/80 backdrop-blur-sm transition-all duration-300 hover:border-[#ff9700]/50 font-medium"
+                  className="h-12 border-2 border-gray-200 focus:border-[#ff0000] focus:ring-[#ff0000] rounded-xl bg-white/80 backdrop-blur-sm transition-all duration-300 hover:border-[#ff0000]/50 font-medium"
                   placeholder={
                     locale === "pt" ? "Seu nome completo" : "Your full name"
                   }
@@ -202,13 +202,13 @@ export function ContactForm({ locale, translations: t }: ContactFormProps) {
             </div>
 
             <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-[#ff9700]/5 to-transparent rounded-xl opacity-0 group-focus-within:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#ff0000]/5 to-transparent rounded-xl opacity-0 group-focus-within:opacity-100 transition-opacity duration-300"></div>
               <div className="relative">
                 <Label
                   htmlFor="email"
                   className="flex items-center text-sm font-semibold text-gray-700 mb-3"
                 >
-                  <Mail className="h-4 w-4 text-[#ff9700] mr-2" />
+                  <Mail className="h-4 w-4 text-[#ff0000] mr-2" />
                   {t.formEmail}
                 </Label>
                 <Input
@@ -217,7 +217,7 @@ export function ContactForm({ locale, translations: t }: ContactFormProps) {
                   value={formData.email}
                   onChange={(e) => handleInputChange("email", e.target.value)}
                   required
-                  className="h-12 border-2 border-gray-200 focus:border-[#ff9700] focus:ring-[#ff9700] rounded-xl bg-white/80 backdrop-blur-sm transition-all duration-300 hover:border-[#ff9700]/50 font-medium"
+                  className="h-12 border-2 border-gray-200 focus:border-[#ff0000] focus:ring-[#ff0000] rounded-xl bg-white/80 backdrop-blur-sm transition-all duration-300 hover:border-[#ff0000]/50 font-medium"
                   placeholder={
                     locale === "pt"
                       ? "seu.email@exemplo.com"
@@ -231,20 +231,20 @@ export function ContactForm({ locale, translations: t }: ContactFormProps) {
           {/* Phone and Company Row */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-[#ff9700]/5 to-transparent rounded-xl opacity-0 group-focus-within:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#ff0000]/5 to-transparent rounded-xl opacity-0 group-focus-within:opacity-100 transition-opacity duration-300"></div>
               <div className="relative">
                 <Label
                   htmlFor="phone"
                   className="flex items-center text-sm font-semibold text-gray-700 mb-3"
                 >
-                  <Phone className="h-4 w-4 text-[#ff9700] mr-2" />
+                  <Phone className="h-4 w-4 text-[#ff0000] mr-2" />
                   {t.formPhone}
                 </Label>
                 <Input
                   id="phone"
                   value={formData.phone}
                   onChange={(e) => handleInputChange("phone", e.target.value)}
-                  className="h-12 border-2 border-gray-200 focus:border-[#ff9700] focus:ring-[#ff9700] rounded-xl bg-white/80 backdrop-blur-sm transition-all duration-300 hover:border-[#ff9700]/50 font-medium"
+                  className="h-12 border-2 border-gray-200 focus:border-[#ff0000] focus:ring-[#ff0000] rounded-xl bg-white/80 backdrop-blur-sm transition-all duration-300 hover:border-[#ff0000]/50 font-medium"
                   placeholder={
                     locale === "pt" ? "+244 000 000 000" : "+244 000 000 000"
                   }
@@ -253,20 +253,20 @@ export function ContactForm({ locale, translations: t }: ContactFormProps) {
             </div>
 
             <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-[#ff9700]/5 to-transparent rounded-xl opacity-0 group-focus-within:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#ff0000]/5 to-transparent rounded-xl opacity-0 group-focus-within:opacity-100 transition-opacity duration-300"></div>
               <div className="relative">
                 <Label
                   htmlFor="company"
                   className="flex items-center text-sm font-semibold text-gray-700 mb-3"
                 >
-                  <Building className="h-4 w-4 text-[#ff9700] mr-2" />
+                  <Building className="h-4 w-4 text-[#ff0000] mr-2" />
                   {t.formCompany}
                 </Label>
                 <Input
                   id="company"
                   value={formData.company}
                   onChange={(e) => handleInputChange("company", e.target.value)}
-                  className="h-12 border-2 border-gray-200 focus:border-[#ff9700] focus:ring-[#ff9700] rounded-xl bg-white/80 backdrop-blur-sm transition-all duration-300 hover:border-[#ff9700]/50 font-medium"
+                  className="h-12 border-2 border-gray-200 focus:border-[#ff0000] focus:ring-[#ff0000] rounded-xl bg-white/80 backdrop-blur-sm transition-all duration-300 hover:border-[#ff0000]/50 font-medium"
                   placeholder={
                     locale === "pt"
                       ? "Nome da sua empresa"
@@ -279,20 +279,20 @@ export function ContactForm({ locale, translations: t }: ContactFormProps) {
 
           {/* Service Selection */}
           <div className="group relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-[#ff9700]/5 to-transparent rounded-xl opacity-0 group-focus-within:opacity-100 transition-opacity duration-300"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-[#ff0000]/5 to-transparent rounded-xl opacity-0 group-focus-within:opacity-100 transition-opacity duration-300"></div>
             <div className="relative">
               <Label
                 htmlFor="service"
                 className="flex items-center text-sm font-semibold text-gray-700 mb-3"
               >
-                <Sparkles className="h-4 w-4 text-[#ff9700] mr-2" />
+                <Sparkles className="h-4 w-4 text-[#ff0000] mr-2" />
                 {t.formService}
               </Label>
               <Select
                 value={formData.service}
                 onValueChange={(value) => handleInputChange("service", value)}
               >
-                <SelectTrigger className="h-12 border-2 border-gray-200 focus:border-[#ff9700] focus:ring-[#ff9700] rounded-xl bg-white/80 backdrop-blur-sm transition-all duration-300 hover:border-[#ff9700]/50 font-medium">
+                <SelectTrigger className="h-12 border-2 border-gray-200 focus:border-[#ff0000] focus:ring-[#ff0000] rounded-xl bg-white/80 backdrop-blur-sm transition-all duration-300 hover:border-[#ff0000]/50 font-medium">
                   <SelectValue placeholder={t.selectService} />
                 </SelectTrigger>
                 <SelectContent className="rounded-xl border-2 border-gray-200 bg-white/95 backdrop-blur-sm">
@@ -300,7 +300,7 @@ export function ContactForm({ locale, translations: t }: ContactFormProps) {
                     <SelectItem
                       key={index}
                       value={service}
-                      className="rounded-lg hover:bg-[#ff9700]/10 focus:bg-[#ff9700]/10 transition-colors duration-200"
+                      className="rounded-lg hover:bg-[#ff0000]/10 focus:bg-[#ff0000]/10 transition-colors duration-200"
                     >
                       {service}
                     </SelectItem>
@@ -312,13 +312,13 @@ export function ContactForm({ locale, translations: t }: ContactFormProps) {
 
           {/* Message */}
           <div className="group relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-[#ff9700]/5 to-transparent rounded-xl opacity-0 group-focus-within:opacity-100 transition-opacity duration-300"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-[#ff0000]/5 to-transparent rounded-xl opacity-0 group-focus-within:opacity-100 transition-opacity duration-300"></div>
             <div className="relative">
               <Label
                 htmlFor="message"
                 className="flex items-center text-sm font-semibold text-gray-700 mb-3"
               >
-                <MessageSquare className="h-4 w-4 text-[#ff9700] mr-2" />
+                <MessageSquare className="h-4 w-4 text-[#ff0000] mr-2" />
                 {t.formMessage}
               </Label>
               <Textarea
@@ -326,7 +326,7 @@ export function ContactForm({ locale, translations: t }: ContactFormProps) {
                 value={formData.message}
                 onChange={(e) => handleInputChange("message", e.target.value)}
                 rows={5}
-                className="border-2 border-gray-200 focus:border-[#ff9700] focus:ring-[#ff9700] resize-none rounded-xl bg-white/80 backdrop-blur-sm transition-all duration-300 hover:border-[#ff9700]/50 font-medium"
+                className="border-2 border-gray-200 focus:border-[#ff0000] focus:ring-[#ff0000] resize-none rounded-xl bg-white/80 backdrop-blur-sm transition-all duration-300 hover:border-[#ff0000]/50 font-medium"
                 placeholder={
                   locale === "pt"
                     ? "Descreva detalhadamente seu projeto ou necessidade..."
@@ -341,7 +341,7 @@ export function ContactForm({ locale, translations: t }: ContactFormProps) {
             <Button
               type="submit"
               disabled={isSubmitting}
-              className="w-full h-14 bg-gradient-to-r from-[#ff9700] to-[#ff9700] hover:from-[#ff9700] hover:to-[#ff9700] text-white font-bold text-lg disabled:opacity-50 disabled:cursor-not-allowed rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98]"
+              className="w-full h-14 bg-gradient-to-r from-[#ff0000] to-[#ff0000] hover:from-[#ff0000] hover:to-[#ff0000] text-white font-bold text-lg disabled:opacity-50 disabled:cursor-not-allowed rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98]"
             >
               {isSubmitting ? (
                 <div className="flex items-center gap-3">
@@ -359,18 +359,18 @@ export function ContactForm({ locale, translations: t }: ContactFormProps) {
 
           {/* Trust Elements */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-6">
-            <div className="p-4 bg-gradient-to-r from-[#ff9700]/10 to-green-50/50 rounded-xl border border-[#ff9700]/20">
+            <div className="p-4 bg-gradient-to-r from-[#ff0000]/10 to-green-50/50 rounded-xl border border-[#ff0000]/20">
               <div className="flex items-center justify-center">
-                <CheckCircle className="h-5 w-5 text-[#ff9700] mr-2" />
+                <CheckCircle className="h-5 w-5 text-[#ff0000] mr-2" />
                 <span className="text-sm font-semibold text-gray-700">
                   {locale === "pt" ? "Resposta em 24h" : "24h Response"}
                 </span>
               </div>
             </div>
 
-            <div className="p-4 bg-gradient-to-r from-[#ff9700]/10 to-green-50/50 rounded-xl border border-[#ff9700]/20">
+            <div className="p-4 bg-gradient-to-r from-[#ff0000]/10 to-green-50/50 rounded-xl border border-[#ff0000]/20">
               <div className="flex items-center justify-center">
-                <Star className="h-5 w-5 text-[#ff9700] mr-2" />
+                <Star className="h-5 w-5 text-[#ff0000] mr-2" />
                 <span className="text-sm font-semibold text-gray-700">
                   {locale === "pt" ? "Orçamento Gratuito" : "Free Quote"}
                 </span>

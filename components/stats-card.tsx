@@ -24,43 +24,43 @@ export function StatsCard({
       <div
         className="absolute inset-0 opacity-5 rounded-3xl"
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ff9700' fillOpacity='0.1'%3E%3Cpath d='M30 30c0-8.3-6.7-15-15-15s-15 6.7-15 15 6.7 15 15 15 15-6.7 15-15zm15 0c0-8.3-6.7-15-15-15s-15 6.7-15 15 6.7 15 15 15 15-6.7 15-15z'/%3E%3C/g%3E%3C/svg%3E")`,
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ff0000' fillOpacity='0.1'%3E%3Cpath d='M30 30c0-8.3-6.7-15-15-15s-15 6.7-15 15 6.7 15 15 15 15-6.7 15-15zm15 0c0-8.3-6.7-15-15-15s-15 6.7-15 15 6.7 15 15 15 15-6.7 15-15z'/%3E%3C/g%3E%3C/svg%3E")`,
         }}
       />
 
       <div
-        className="h-full bg-white/90 backdrop-blur-sm border-2 border-transparent group-hover:border-[#ff9700]/20 transition-all duration-500 rounded-3xl shadow-lg group-hover:shadow-2xl relative overflow-hidden p-8"
+        className="h-full bg-white/90 backdrop-blur-sm border-2 border-transparent group-hover:border-[#ff0000]/20 transition-all duration-500 rounded-3xl shadow-lg group-hover:shadow-2xl relative overflow-hidden p-8"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#ff9700]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#ff0000]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
 
         {/* Decorative Corner */}
-        <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#ff9700]/10 to-transparent rounded-bl-3xl transform scale-0 group-hover:scale-100 transition-transform duration-500"></div>
+        <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#ff0000]/10 to-transparent rounded-bl-3xl transform scale-0 group-hover:scale-100 transition-transform duration-500"></div>
 
         {/* Content Container */}
         <div className="relative z-10 h-full flex flex-col justify-center">
           {/* Icon with Enhanced Effects */}
           <div className="relative mb-6">
-            <div className="absolute inset-0 bg-gradient-to-br from-[#ff9700] to-[#007a4e] rounded-2xl blur-lg opacity-0 group-hover:opacity-30 transition-opacity duration-500 scale-110"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-[#ff0000] to-[#ff0000] rounded-2xl blur-lg opacity-0 group-hover:opacity-30 transition-opacity duration-500 scale-110"></div>
             <div
-              className={`relative w-16 h-16 bg-gradient-to-br from-[#ff9700]/10 to-[#ff9700]/5 rounded-2xl flex items-center justify-center transition-all duration-500 group-hover:from-[#ff9700] group-hover:to-[#007a4e] group-hover:scale-110 group-hover:rotate-3 shadow-lg group-hover:shadow-xl`}
+              className={`relative w-16 h-16 bg-gradient-to-br from-[#ff0000]/10 to-[#ff0000]/5 rounded-2xl flex items-center justify-center transition-all duration-500 group-hover:from-[#ff0000] group-hover:to-[#ff0000] group-hover:scale-110 group-hover:rotate-3 shadow-lg group-hover:shadow-xl`}
             >
               <Icon
-                className={`h-8 w-8 text-[#ff9700] transition-all duration-500 group-hover:text-white group-hover:scale-110`}
+                className={`h-8 w-8 text-[#ff0000] transition-all duration-500 group-hover:text-white group-hover:scale-110`}
               />
             </div>
             {/* Pulse Ring */}
-            <div className="absolute inset-0 border-2 border-[#ff9700]/30 rounded-2xl scale-110 opacity-0 group-hover:opacity-100 group-hover:scale-125 transition-all duration-500"></div>
+            <div className="absolute inset-0 border-2 border-[#ff0000]/30 rounded-2xl scale-110 opacity-0 group-hover:opacity-100 group-hover:scale-125 transition-all duration-500"></div>
           </div>
 
           {/* Stats Content */}
           <div className="text-center">
             {/* Value with Enhanced Typography */}
-            <div className="text-4xl font-bold text-gray-800 group-hover:text-[#ff9700] transition-colors duration-300 mb-3 relative">
+            <div className="text-4xl font-bold text-gray-800 group-hover:text-[#ff0000] transition-colors duration-300 mb-3 relative">
               {value}
-              <div className="absolute inset-0 bg-gradient-to-r from-[#ff9700] to-[#007a4e] bg-clip-text text-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute inset-0 bg-gradient-to-r from-[#ff0000] to-[#ff0000] bg-clip-text text-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 {value}
               </div>
             </div>
@@ -71,7 +71,7 @@ export function StatsCard({
             </div>
 
             {/* Decorative Line */}
-            <div className="w-12 h-1 bg-gradient-to-r from-[#ff9700] to-[#007a4e] rounded-full mx-auto mt-4 group-hover:w-20 transition-all duration-500"></div>
+            <div className="w-12 h-1 bg-gradient-to-r from-[#ff0000] to-[#ff0000] rounded-full mx-auto mt-4 group-hover:w-20 transition-all duration-500"></div>
           </div>
 
           {/* Bottom Accent Dots */}
@@ -80,7 +80,7 @@ export function StatsCard({
               {[...Array(3)].map((_, i) => (
                 <div
                   key={i}
-                  className="w-1.5 h-1.5 bg-[#ff9700]/20 rounded-full group-hover:bg-[#ff9700]/60 transition-all duration-500"
+                  className="w-1.5 h-1.5 bg-[#ff0000]/20 rounded-full group-hover:bg-[#ff0000]/60 transition-all duration-500"
                   style={{ transitionDelay: `${i * 100}ms` }}
                 ></div>
               ))}
@@ -90,7 +90,7 @@ export function StatsCard({
 
         {/* Animated Border */}
         <div className="absolute inset-0 rounded-3xl">
-          <div className="absolute inset-0 rounded-3xl border-2 border-transparent bg-gradient-to-r from-[#ff9700]/20 via-transparent to-[#ff9700]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div className="absolute inset-0 rounded-3xl border-2 border-transparent bg-gradient-to-r from-[#ff0000]/20 via-transparent to-[#ff0000]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
         </div>
       </div>
     </div>

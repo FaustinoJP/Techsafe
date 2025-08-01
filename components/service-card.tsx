@@ -10,14 +10,6 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-import {
   ExternalLink,
   MessageCircle,
   ArrowRight,
@@ -25,12 +17,13 @@ import {
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import type { Locale } from "@/lib/i18n";
+import { useRouter } from "next/navigation";
 
 interface ServiceCardProps {
   icon: LucideIcon;
   title: string;
   description: string;
-  details: string;
+  details: string[];
   locale: Locale;
   seeDetailsText: string;
   contractServiceText: string;
@@ -48,11 +41,17 @@ export function ServiceCard({
   whatsappMessage,
 }: ServiceCardProps) {
   const [isHovered, setIsHovered] = useState(false);
+  const router = useRouter();
 
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent(`${whatsappMessage} ${title}`);
     const whatsappUrl = `https://wa.me/244951588735?text=${message}`;
     window.open(whatsappUrl, "_blank");
+  };
+
+  const handleDetailsClick = () => {
+    const encodedDetails = encodeURIComponent(JSON.stringify(details));
+    router.push(`/details?title=${encodeURIComponent(title)}&details=${encodedDetails}`);
   };
 
   return (
@@ -79,7 +78,7 @@ export function ServiceCard({
         <CardHeader className="text-center pb-6 relative z-10">
           {/* Icon with Enhanced Effects */}
           <div className="relative mx-auto mb-6">
-            <div className="absolute inset-0 bg-gradient-to-br from-[#ff0000] to-[#b56b00] rounded-2xl blur-lg opacity-0 group-hover:opacity-30 transition-opacity duration-500 scale-110"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-[#ff0000] to-[#ff0000] rounded-2xl blur-lg opacity-0 group-hover:opacity-30 transition-opacity duration-500 scale-110"></div>
             <div
               className={`relative w-20 h-20 bg-gradient-to-br from-[#ff0000]/10 to-[#ff0000]/5 rounded-2xl flex items-center justify-center transition-all duration-500 group-hover:from-[#ff0000] group-hover:to-[#9a0436cd] group-hover:scale-110 group-hover:rotate-3 shadow-lg group-hover:shadow-xl`}
             >
@@ -95,7 +94,7 @@ export function ServiceCard({
             {title}
           </CardTitle>
 
-          <div className="w-16 h-1 bg-gradient-to-r from-[#ff0000] to-[#b56b00] rounded-full mx-auto group-hover:w-24 transition-all duration-500"></div>
+          <div className="w-16 h-1 bg-gradient-to-r from-[#ff0000] to-[#ff0000] rounded-full mx-auto group-hover:w-24 transition-all duration-500"></div>
         </CardHeader>
 
         <CardContent className="space-y-6 relative z-10">
@@ -105,33 +104,16 @@ export function ServiceCard({
 
           <div className="flex flex-col gap-4">
             {/* Details Button */}
-            <Dialog>
-              <DialogTrigger asChild>
-                <Button
-                  variant="outline"
-                  className="w-full border-2 border-gray-200 hover:border-[#ff0000] hover:text-[#b56b00] hover:bg-[#ff0000]/5 transition-all duration-300 rounded-xl py-3 group/btn"
-                >
-                  <ExternalLink className="h-4 w-4 mr-2 group-hover/btn:rotate-12 transition-transform duration-300" />
-                  {seeDetailsText}
-                  <ArrowRight className="h-4 w-4 ml-auto opacity-0 group-hover/btn:opacity-100 group-hover/btn:translate-x-1 transition-all duration-300" />
-                </Button>
-              </DialogTrigger>
-              <DialogContent className="max-w-2xl rounded-2xl border-2 border-[#ff0000]/20">
-                <DialogHeader>
-                  <DialogTitle className="flex items-center gap-3 text-2xl mb-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-[#357af3] to-[#357af3] rounded-xl flex items-center justify-center shadow-lg">
-                      <Icon className="h-6 w-6 text-white" />
-                    </div>
-                    <span className="bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
-                      {title}
-                    </span>
-                  </DialogTitle>
-                  <DialogDescription className="text-base leading-relaxed pt-4 text-gray-600">
-                    {details}
-                  </DialogDescription>
-                </DialogHeader>
-              </DialogContent>
-            </Dialog>
+            <Button
+              onClick={handleDetailsClick}
+              variant="outline"
+              className="w-full border-2 border-gray-200 hover:border-[#ff0000] hover:text-[#b56b00] hover:bg-[#ff0000]/5 transition-all duration-300 rounded-xl py-3 group/btn"
+            >
+              <ExternalLink className="h-4 w-4 mr-2 group-hover/btn:rotate-12 transition-transform duration-300" />
+              {seeDetailsText}
+              <ArrowRight className="h-4 w-4 ml-auto opacity-0 group-hover/btn:opacity-100 group-hover/btn:translate-x-1 transition-all duration-300" />
+            </Button>
+
             {/* WhatsApp Button */}
             <Button
               onClick={handleWhatsAppClick}

@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { ServiceCard } from "@/components/service-card";
 import { ContactForm } from "@/components/contact-form";
 import { ContactInfo } from "@/components/contact-info";
 import { MissionVisionCard } from "@/components/mission-vision-card";
@@ -31,7 +32,6 @@ import {
   ChevronRight,
 } from "lucide-react";
 import { type Locale, getTranslation } from "@/lib/i18n";
-import ServiceCard from "@/components/service-card";
 
 export default function HomePage() {
   const [locale, setLocale] = useState<Locale>("en");
@@ -203,9 +203,26 @@ export default function HomePage() {
               {t.servicesSubtitle}
             </p>
           </div>
-            
-               <ServiceCard /> 
-            
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {services.map((service, index) => (
+              <div
+                key={index}
+                className="transform hover:scale-105 transition-transform duration-300"
+              >
+                <ServiceCard
+                  icon={service.icon}
+                  title={service.title}
+                  description={service.description}
+                  details={service.details}
+                  locale={locale}
+                  seeDetailsText={t.seeDetails}
+                  contractServiceText={t.contractService}
+                  whatsappMessage={t.whatsappMessage}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

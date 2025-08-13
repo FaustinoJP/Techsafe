@@ -87,7 +87,7 @@ export default function ServiceDetalhe({ service, onOpenModal }) {
               <Sparkles className="h-4 w-4 ml-auto opacity-0 group-hover/whatsapp:opacity-100 group-hover/whatsapp:rotate-12 transition-all duration-300" />
             </button>
           </div>
-
+        
           {/* Bottom Accent */}
           <div className="flex items-center justify-center pt-4">
             <div className="flex space-x-1">
